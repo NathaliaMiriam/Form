@@ -35,12 +35,22 @@ h1{
 }
 
 h2{
-    margin-bottom: 10px;
+    margin-bottom: .1em;
+    letter-spacing: .1em;
 }
 
 .paragrafo-primario{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1em;
+}
+
+.div-1, .div-2{
+    margin-bottom: 15px;
+}
+
+h3{
+    font-size: 1.2em;
 }
 
 .conteudo-secundario{  
@@ -48,8 +58,8 @@ h2{
     font-size: 18px;
     width: 65%;
     margin-left: 35%;
-    padding: 124px 54px 72px;
-    line-height: 2;
+    padding: 80px 100px 70px;
+    line-height: 1.5;
 }
 
 .paragrafo-secundario{
@@ -66,7 +76,7 @@ label{
 
 input, select, textarea{
     background-color: #ccc;
-    padding: 11px;
+    padding: 21px;
     border-radius: 5px;
     margin-bottom: 15px;
     border: 2px solid transparent;
@@ -82,10 +92,19 @@ input .seção-1{
 }
 
 .seção-1 input[type="text"], .seção-1 input[type="email"], .seção-1 input[type="tel"], .seção-1 select, .seção-1 textarea {
-    padding: 0.5em;
+    padding: .7em;
     border: 1px solid #b23a48;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display: block;
+    width: 70%;
+}
+
+.seção-1 select {
+    width: 12%;
+}
+
+.seção-1 input[type="tel"]{
+    width: 45%;
 }
 
 textarea{
@@ -99,6 +118,7 @@ select{
 legend{
     font-family: 'Abel', sans-serif;
     color: black;
+    margin-bottom: 10px;
 }
 
 .linhas-1-2-3{
@@ -111,16 +131,40 @@ legend{
     background-color: #b23a48;
     border: 3px solid #ede7e3;
     color: white;
-    padding: .75em 1.5em;
+    padding: .75em 3.5em;
     border-radius: 7px;
     font-size: .8em;
     cursor: pointer;
     margin-top: 10px;
-}    
+}
+
+.button:hover{
+    background-color: #5b8e7d;
+}
 
 .icones-footer{
     width:40px;
     height: 40px;
     margin-top: 300px;
     margin-left: 3px;
+}
+
+@media screen and (max-height: 625px){
+    .conteudo-primario{
+        padding: 0;
+        padding-left: 25px;
+        padding-top: 20px;
+    }
+
+    .icones-footer{
+        margin-top: 45px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .conteudo-secundario{
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    
 }
